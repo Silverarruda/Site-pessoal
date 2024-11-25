@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site Pessoal</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Meu Site Pessoal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Silmara Celestino de Arruda</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary me-2" onclick="showContent('areas')">
+                <i class="fas fa-book-open"></i> Áreas do Saber
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary me-2" onclick="showContent('iot')">
+                <i class="fas fa-cogs"></i> Página de IoT
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-primary me-2" onclick="showContent('favorite')">
+                <i class="fas fa-star"></i> Minha Matéria Favorita
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-secondary" onclick="showContent('main-content')">
+                <i class="fas fa-home"></i> Voltar ao Menu Principal
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <!-- Página Principal com Carrossel -->
+    <div id="main-content" class="content">
+      <h1 class="text-center">Bem-vinda ao meu site pessoal!</h1>
+      <p class="text-center">Clique nos botões acima para explorar mais sobre meu aprendizado e interesses.</p>
+      
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://i.postimg.cc/g2hQgXjB/Formado.jpg" class="d-block w-100" alt="Imagem Formado">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.postimg.cc/R0Q8zkc7/IOT.jpg" class="d-block w-100" alt="Imagem IoT">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.postimg.cc/JhWgvrB7/SENAC.jpg" class="d-block w-100" alt="Imagem SENAC">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <div class="col-12 mt-4">
+          <h3 class="text-center">
+            Meu nome é Silmara, tenho 18 anos e estou me formando no curso de IOT no Senac. Nesse site você vai descobrir um pouco sobre IoT.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- Áreas do Saber -->
+    <div id="areas" class="content d-none">
+      <h2 class="text-center mb-4">Áreas do Saber</h2>
+      <div class="row">
+        <!-- Ciências Humanas -->
+        <div class="col-md-6 mb-4">
+          <h3>Ciências Humanas</h3>
+          <img src="https://i.postimg.cc/pXCpprR4/CHS.png" alt="Ciências Humanas" class="img-fluid rounded" style="max-width: 250px; height:auto;">
+          <ul>
+            <li>História: Victor Leite</li>
+            <li>Geografia: Thais Domingos</li>
+            <li>Filosofia: Luiza de Freitas</li>
+            <li>Sociologia: Diogo Correa</li>
+          </ul>
+          <p><strong>Atividades favoritas:</strong> Debate sobre a legalização da maconha, Word café, trabalhos em geral que tínhamos que ler textos e responder perguntas.</p>
+        </div>
+
+        <!-- Ciências da Natureza -->
+        <div class="col-md-6 mb-4">
+          <h3>Ciências da Natureza</h3>
+          <img src="https://i.postimg.cc/WpMDcSK2/Ciencias-da-Natureza.jpg" alt="Ciências da Natureza" class="img-fluid rounded" style="max-width: 250px; height:auto;">
+          <ul>
+            <li>Física: Thaioã</li>
+            <li>Química: Francisca de Assiz</li>
+            <li>Biologia: Robson Zago</li>
+          </ul>
+          <p><strong>Atividades favoritas:</strong> Aulas em laboratório, atividades de física no Phet e apresentações e aulas do Robson.</p>
+        </div>
+
+        <!-- Linguagens e Códigos -->
+        <div class="col-md-6 mb-4">
+          <h3>Linguagens e Códigos</h3>
+          <img src="https://i.postimg.cc/PJzNbrZL/linguagens.jpg" alt="Linguagens e Códigos" class="img-fluid rounded" style="max-width: 250px; height:auto;">
+          <ul>
+            <li>Português: Giselle Gomes</li>
+            <li>Inglês: Naja de Oliveira</li>
+            <li>Artes: Marcela Torres</li>
+            <li>Educação Física: José Ricardo Barbosa</li>
+          </ul>
+          <p><strong>Atividades favoritas:</strong> Ir para a quadra, realizar o evento do Maracatú Rural e aprender um pouco mais sobre a língua inglesa.</p>
+        </div>
+
+        <!-- Matemática -->
+        <div class="col-md-6 mb-4">
+          <h3>Matemática</h3>
+          <img src="https://i.postimg.cc/3JYk8m52/Mat.jpg" alt="Matemática" class="img-fluid rounded" style="max-width: 250px; height:auto;">
+          <ul>
+            <li>Matemática: Clóvis José Serra</li>
+            <li>Estatística: Clóvis José Serra</li>
+          </ul>
+          <p><strong>Atividades favoritas:</strong> Atividades que desafiem o cérebro, atividades de equações complexas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Página de IoT -->
+    <div id="iot" class="content d-none">
+      <h2>Página de IoT</h2>
+      <p><strong>Professor:</strong> Glauco Roberto</p>
+      <p>
+        Tarefas de IoT: Aprender a montar e desmontar um computador, estrutura de redes de computadores e dispositivos, sistemas operacionais, fazer um carrinho seguir uma reta [fita isolante], montar um boné com sensor de aproximação, aprender todo sistema de funcionamento de semáforos das ruas, entre outros projetos focados em mostrar como a internet ligada a tudo funciona e como ela pode e consegue automatizar funções.
+      </p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="https://i.postimg.cc/JzKNHd6H/IOT-4.jpg" alt="Projeto IoT" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://i.postimg.cc/3wc2n0HK/IOT-2.jpg" alt="Projeto IoT" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://i.postimg.cc/XvJwfcmH/IOT-3.jpg" alt="Projeto IoT" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://i.postimg.cc/vTRfdRBk/IOT-1.jpg" alt="Projeto IoT" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://i.postimg.cc/YqKf5FL0/IOT-5.jpg" alt="Projeto IoT" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+
+    <div id="favorite" class="content d-none">
+      <h2>Minha Matéria Favorita</h2>
+      <p>Minha matéria favorita é BIOLOGIA, especialmente o estudo de animais, que inclusive, influenciou na minha escolha de profissão, Medicina Veterinária.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <img src="https://i.postimg.cc/gcysJV5D/Monografias-de-Biologia-trabalhos-e-informa-es-acad-micas.png" alt="Matemática" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Silmara Celestino de Arruda. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showContent(contentId) {
+      const sections = document.querySelectorAll('.content');
+      sections.forEach(section => section.classList.add('d-none'));
+      document.getElementById(contentId).classList.remove('d-none');
+    }
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

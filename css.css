@@ -1,0 +1,73 @@
+body {
+    background-color: #f0f8ff; /* Cor de fundo suave */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #2c3e50; /* Cor de fundo mais escura e menos chamativa */
+  }
+  
+  .navbar-brand {
+    color: #ecf0f1 !important; /* Texto claro */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ecf0f1 !important; /* Cor do texto do menu */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f39c12 !important; /* Cor de hover amarelo */
+  }
+  
+  .btn-outline-primary {
+    border-color: #7f8c8d !important; /* Cor cinza mais suave para o botão */
+    color: #7f8c8d !important; /* Cor do texto cinza */
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #7f8c8d !important; /* Cor de fundo cinza suave ao passar o mouse */
+    color: #fff !important; /* Cor do texto branca */
+  }
+  
+  .btn-outline-secondary {
+    border-color: #95a5a6 !important; /* Cor cinza suave para o botão secundário */
+    color: #95a5a6 !important; /* Cor do texto cinza claro */
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #95a5a6 !important; /* Cor de fundo cinza claro ao passar o mouse */
+    color: #fff !important; /* Cor do texto branca */
+  }
+  
+  .content {
+    background-color: #ffffff; /* Fundo branco para os blocos de conteúdo */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #34495e; /* Cor do rodapé igual ao cabeçalho */
+    color: white;
+  }
+  
+  footer a {
+    color: #e74c3c; /* Cor do link no rodapé */
+  }
+  
+  footer a:hover {
+    text-decoration: underline; /* Deixar os links com sublinhado ao passar o mouse */
+  }
+  
+  /* Carrossel */
+  .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Centralizar imagem na seção "Minha Matéria Favorita" */
+  #favorite img {
+    display: block;
+    margin: 0 auto;
+  }
+  
